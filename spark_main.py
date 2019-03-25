@@ -21,7 +21,7 @@ def convert_size(size_bytes):
 def download_files(obj):
 	s3_resource = boto3.resource('s3')
 	dest_filepath = os.path.join('/tmp', obj['Key'].lstrip('tsv/'))
-	# s3_resource.Object(PRODUCT_REVIEWS_DATASET_BUCKET, obj['Key']).download_file(dest_filepath)
+	s3_resource.Object(PRODUCT_REVIEWS_DATASET_BUCKET, obj['Key']).download_file(dest_filepath)
 	return dest_filepath
 
 def ungzip_file(target, dest=None):
