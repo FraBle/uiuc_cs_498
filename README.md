@@ -38,6 +38,12 @@ Run with file name filter, custom file destination and debug info activated:
 python data_set_downloader.py --file-names tsv/amazon_reviews_us_Watches_v1_00.tsv.gz --file-names tsv/amazon_reviews_us_Home_Entertainment_v1_00.tsv.gz -d .target --debug
 ```
 
+## Jupyter Notebooks
+1. Install Spark on your local machine, e.g. `brew install apache-spark` for MacOS
+1. Install Python 3, e.g. `brew install python` for MacOS
+1. Install the Python dependencies: `pip install beautifulsoup4 jupyter matplotlib numpy pandas scikit-learn seaborn`
+1. Start Jupyter Notebook: `python jupyter`
+
 ## Statistics
 A preliminary example of the process we intend to implement in a distributed computing process is shown in `Amazon Watches Reviews EDA.ipynb`.  
 This Juptyer notebook demonstates how the Amazon Reviews can be divided into several tiers and how a training data set and model can be used to predict the tier that the product should belong using certain aggregate features.
