@@ -121,3 +121,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IDEs
+*.code-workspace
+.vscode
+
+# Data Sets
+.datasets/*.tsv*
