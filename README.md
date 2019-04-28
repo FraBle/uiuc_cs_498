@@ -49,7 +49,7 @@ python data_set_downloader.py --file-names tsv/amazon_reviews_us_Watches_v1_00.t
 1. Install Spark on your local machine, e.g. `brew install apache-spark` for MacOS
 1. Install Python 3, e.g. `brew install python` for MacOS
 1. Install the Python dependencies: `pip install -r requirements.txt`
-1. Start Jupyter Notebook: `python jupyter`
+1. Start Jupyter Notebook: `jupyter notebook`
 
 ## Statistics
 
