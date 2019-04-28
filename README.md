@@ -1,14 +1,17 @@
 # CS 498 CCA: Project Team 40
+
 > Improving Amazon Star Ratings through Text Analysis on Review Content
 
 ## Download Data Sets
+
 1. Install Spark on your local machine, e.g. `brew install apache-spark` for MacOS
 1. Install Python 3, e.g. `brew install python` for MacOS
-1. Install the Python dependencies: `pip install boto3 click click_pathlib pyspark`
+1. Install the Python dependencies: `pip install -r requirements.txt`
 1. Run the Data Set Downloader: `python data_set_downloader.py`
 
 ### Usage and Options
-```
+
+```text
 Usage: data_set_downloader.py [OPTIONS]
 
   Utility to download Amazon Product Reviews data set.
@@ -26,6 +29,7 @@ Options:
 ```
 
 ### Default Values
+
 | Option                | Value                |
 |-----------------------|----------------------|
 | `aws-data-set-region` | `us-east-1`          |
@@ -33,17 +37,21 @@ Options:
 | `file-destination`    | `./datasets`         |
 
 ### Example Usage
+
 Run with file name filter, custom file destination and debug info activated:
-```
+
+```bash
 python data_set_downloader.py --file-names tsv/amazon_reviews_us_Watches_v1_00.tsv.gz --file-names tsv/amazon_reviews_us_Home_Entertainment_v1_00.tsv.gz -d .target --debug
 ```
 
 ## Jupyter Notebooks
+
 1. Install Spark on your local machine, e.g. `brew install apache-spark` for MacOS
 1. Install Python 3, e.g. `brew install python` for MacOS
-1. Install the Python dependencies: `pip install beautifulsoup4 jupyter matplotlib numpy pandas scikit-learn seaborn`
+1. Install the Python dependencies: `pip install -r requirements.txt`
 1. Start Jupyter Notebook: `python jupyter`
 
 ## Statistics
-A preliminary example of the process we intend to implement in a distributed computing process is shown in `Amazon Watches Reviews EDA.ipynb`.  
+
+A preliminary example of the process we intend to implement in a distributed computing process is shown in `Amazon_Watches_Reviews_EDA.ipynb`.
 This Juptyer notebook demonstates how the Amazon Reviews can be divided into several tiers and how a training data set and model can be used to predict the tier that the product should belong using certain aggregate features.
